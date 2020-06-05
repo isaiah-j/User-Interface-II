@@ -49,9 +49,6 @@ nav {
 	height: 40vh;
 }
 
-main {
-	flex: 1;
-}
 .row {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -74,11 +71,17 @@ main {
 @media (max-width: 738px) {
 	.row {
 		display: grid;
-		grid-template-columns: 1fr ;
+		grid-template-columns: 1fr;
 		grid-gap: 1rem;
 	}
 	h1 {
 		font-size: 4rem;
+	}
+	nav {
+		justify-content: space-around;
+	}
+	#logo {
+		display: none;
 	}
 }
 
@@ -94,22 +97,26 @@ main {
 	nav {
 		justify-content: space-around;
 	}
-	#logo{
+	#logo {
 		display: none;
 	}
-	.nav-links{
+	.nav-links {
 		font-size: 0.9rem;
 	}
-	.btn{
+	.btn {
 		font-size: 0.9rem;
 	}
+}
+
+footer .btn {
+	padding: 1rem;
 }
 
 footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: bisque;
 	height: 10vh;
 	flex-shrink: 0;
+	background-color: seashell;
 }
