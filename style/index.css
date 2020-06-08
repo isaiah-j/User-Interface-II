@@ -51,9 +51,8 @@ nav {
 
 .row {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 1rem;
 }
+
 .card {
 	text-align: center;
 }
@@ -68,10 +67,16 @@ main {
 	align-items: center;
 }
 
-@media (max-width: 738px) {
+.row{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 1rem;
+}
+
+@media (max-width: 800px) {
 	.row {
 		display: grid;
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr 1fr;
 		grid-gap: 1rem;
 	}
 	h1 {
@@ -85,11 +90,10 @@ main {
 	}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
 	.row {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-gap: 1rem;
 	}
 	h1 {
 		font-size: 3.5rem;
